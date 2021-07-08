@@ -238,7 +238,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("operator.ws2812 needs to be number between 0 and 10, but got \"invalid\"", MyLog.getWarnings()[1])
+                assert.is_same("operator.ws2812 needs to be number between 0 and 30, but got \"invalid\"", MyLog.getWarnings()[1])
                 assert.is_same(5, MySettings.operatorNumberOfWs2812Lights())
             end)
         end)
@@ -262,7 +262,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("operator.ws2812 needs to be number between 0 and 10, but got \"-2\"", MyLog.getWarnings()[1])
+                assert.is_same("operator.ws2812 needs to be number between 0 and 30, but got \"-2\"", MyLog.getWarnings()[1])
                 assert.is_same(5, MySettings.operatorNumberOfWs2812Lights())
             end)
         end)
@@ -274,7 +274,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("operator.ws2812 needs to be number between 0 and 10, but got \"42\"", MyLog.getWarnings()[1])
+                assert.is_same("operator.ws2812 needs to be number between 0 and 30, but got \"42\"", MyLog.getWarnings()[1])
                 assert.is_same(5, MySettings.operatorNumberOfWs2812Lights())
             end)
         end)
@@ -330,7 +330,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("stage.ws2812 needs to be number between 0 and 10, but got \"invalid\"", MyLog.getWarnings()[1])
+                assert.is_same("stage.ws2812 needs to be number between 0 and 30, but got \"invalid\"", MyLog.getWarnings()[1])
                 assert.is_same(0, MySettings.stageNumberOfWs2812Lights())
             end)
         end)
@@ -354,7 +354,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("stage.ws2812 needs to be number between 0 and 10, but got \"-2\"", MyLog.getWarnings()[1])
+                assert.is_same("stage.ws2812 needs to be number between 0 and 30, but got \"-2\"", MyLog.getWarnings()[1])
                 assert.is_same(0, MySettings.stageNumberOfWs2812Lights())
             end)
         end)
@@ -366,7 +366,7 @@ describe("Settings parser", function()
 
                 require "src.my-settings"
 
-                assert.is_same("stage.ws2812 needs to be number between 0 and 10, but got \"42\"", MyLog.getWarnings()[1])
+                assert.is_same("stage.ws2812 needs to be number between 0 and 30, but got \"42\"", MyLog.getWarnings()[1])
                 assert.is_same(0, MySettings.stageNumberOfWs2812Lights())
             end)
         end)
